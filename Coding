@@ -1,0 +1,94 @@
+import java.util.Scanner;
+
+public class LabTest3 {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		printoneword();
+		printtwoword();
+		printthreeword();
+		printfourword();
+		
+		in.close();
+	}
+		
+	public static void printoneword() {
+		Scanner in = new Scanner(System.in);
+		
+		String randomText = "hello\r\n"
+				+ "world\r\n"
+				+ "hello\r\n"
+				+ "germany\r\n"
+				+ "hello\r\n"
+				+ "berlin";
+		
+        String text = "hello";
+        int times = 0;
+        for (int i = 0; i < randomText.length(); i++) {
+            if (randomText.substring(i).startsWith(text)) {
+                times ++;
+            }
+        }
+        System.out.println(text + ", " + times);
+	}
+	
+	public static void printtwoword() {
+		Scanner in = new Scanner(System.in);
+		
+		String randomText = "hello\r\n"
+				+ "world\r\n"
+				+ "hello\r\n"
+				+ "germany\r\n"
+				+ "hello\r\n"
+				+ "berlin";
+		
+        String text = "world";
+        int times = 0;
+        for (int i = 0; i < randomText.length(); i++) {
+            if (randomText.substring(i).startsWith(text)) {
+                times ++;
+            }
+        }
+        System.out.println(text + ", " + times);
+	}
+	
+	public static void printthreeword() {
+		Scanner in = new Scanner(System.in);
+		
+		String randomText = "hello\r\n"
+				+ "world\r\n"
+				+ "hello\r\n"
+				+ "germany\r\n"
+				+ "hello\r\n"
+				+ "berlin";
+		
+        String text = "germany";
+        int times = 0;
+        for (int i = 0; i < randomText.length(); i++) {
+            if (randomText.substring(i).startsWith(text)) {
+                times ++;
+            }
+        }
+        System.out.println(text + ", " + times);
+	}
+	
+	public static void printfourword() {
+		Scanner in = new Scanner(System.in);
+		
+		String randomText = "hello\r\n"
+				+ "world\r\n"
+				+ "hello\r\n"
+				+ "germany\r\n"
+				+ "hello\r\n"
+				+ "berlin";
+		
+        String text = "berlin";
+        int times = 0;
+        for (int i = 0; i < randomText.length(); i++) {
+            if (randomText.substring(i).startsWith(text)) {
+                times ++;
+            }
+        }
+        System.out.println(text + ", " + times);
+	}
+}
